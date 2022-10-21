@@ -1,0 +1,99 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+*{
+    margin:0;
+    padding:0;
+    text-decoration: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+   
+}
+@media screen and (max-width: 1440px) {
+.Container{
+    display: grid;
+    color:white;
+    padding: 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: hsl(233, 47%, 7%);
+}
+}
+@media screen and (max-width: 375px) {
+    .Container{
+        display: block;
+        color:white;
+        padding: 10%;
+        background-color: hsl(233, 47%, 7%);
+    }
+    }
+.header-picture img
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:2;
+    grid-column-end: 3;
+    border-radius: 0 2% 2% 0;
+}
+.Data1{
+    display: flex;
+   
+   margin-right: 2px;
+}
+.Data2
+{
+    display: flex;
+   
+    margin-right: 2px;
+}
+.Data1 h1{
+  
+    margin-left: 5%;
+   margin-right: 25%;
+   flex: 1 0.5 auto;
+   padding-bottom: 2%;
+}
+.Data2 p
+{
+    flex: 1 0 auto;
+    margin-right: 15%;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-size:15px;
+    text-transform: uppercase;
+}
+
+
+.header{
+    padding: 10%;
+    display: inline-block;
+    background-color: hsl(244, 38%, 16%);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 2;
+    border-radius: 2% 0 0 2%;
+}
+
+.headline{
+    padding-bottom: 10%;
+    font-weight: 700;
+    font-size: xx-large;
+    font-family:Inter; 
+}
+.headline strong{
+    font-weight: 700;
+    font-size: xx-large;
+    font-family:Inter; 
+  color:hsl(277, 64%, 61%);
+  
+}
+.paragraph{
+    padding-bottom: 20%;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+footer{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
