@@ -20,13 +20,14 @@
 }
 @media screen and (max-width: 375px) {
     .Container{
-        display: block;
+        display: grid;
         color:white;
-        padding: 10%;
         background-color: hsl(233, 47%, 7%);
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
     }
     }
-.header-picture img
+.header-picture
 {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -34,43 +35,79 @@
     grid-column-end: 3;
     border-radius: 0 2% 2% 0;
 }
-.Data1{
-    display: flex;
-   
-   margin-right: 2px;
-}
-.Data2
+@media screen and (max-width: 375px) {
+    .header-picture
 {
-    display: flex;
-   
-    margin-right: 2px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 1;
+    border-radius: 2% 0% 0% 2%;
+   overflow: hidden;
 }
-.Data1 h1{
-  
-    margin-left: 5%;
-   margin-right: 25%;
-   flex: 1 0.5 auto;
-   padding-bottom: 2%;
 }
-.Data2 p
+.Data{
+    display: grid;
+
+   grid-template-columns: 1fr 1fr 1fr;
+ 
+}
+@media screen and (max-width: 375px) {
+    .Data{
+        display: grid;
+    
+       grid-template-rows: 1fr 1fr 1fr;
+       grid-template-columns: auto;
+       
+    }
+}
+
+
+.Data p
 {
-    flex: 1 0 auto;
-    margin-right: 15%;
     color:  hsla(0, 0%, 100%, 0.75);
-    font-size:15px;
+    font-size:13px;
     text-transform: uppercase;
+    text-align: left;
+}
+@media screen and (max-width: 375px) {
+    .Data p
+{
+    
+    text-align: center;
+}
 }
 
-
+.Data h1
+{
+    font-size: x-large;
+   text-align: left;
+   font-weight: bold;
+   padding-bottom: 5PX;
+}
+@media screen and (max-width: 375px) {
+    .Data h1
+{
+    
+    text-align: center;
+}
+}
 .header{
     padding: 10%;
-    display: inline-block;
     background-color: hsl(244, 38%, 16%);
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start:1;
     grid-column-end: 2;
     border-radius: 2% 0 0 2%;
+}
+@media screen and (max-width: 375px) {
+    .header{
+    background-color: hsl(244, 38%, 16%);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 2% 0 0 2%;
+    }
 }
 
 .headline{
